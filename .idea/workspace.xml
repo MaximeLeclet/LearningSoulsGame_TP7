@@ -2,46 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91fa4085-dc7f-4436-bd90-1e1b7b1189b5" name="Default" comment="TP2: q7.2">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LearningSoulsGame_TP5.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/LearningSoulsGame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/armor/ArmorItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/armor/BlackWitchVeil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/armor/DragonSlayerLeggings.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/armor/RingedKnightArmor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/bags/Bag.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/bags/Collectible.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/bags/MediumBag.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/bags/SmallBag.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/buffs/BuffItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/buffs/rings/DragonSlayerRing.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/buffs/rings/Ring.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/buffs/rings/RingOfDeath.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/buffs/rings/RingOfSwords.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/buffs/talismans/MoonStone.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/buffs/talismans/NoonGift.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/buffs/talismans/Talisman.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/characters/Character.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/characters/Hero.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/characters/Lycanthrope.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/characters/Monster.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/Consumable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/MenuBestOfV1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/MenuBestOfV2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/MenuBestOfV3.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/MenuBestOfV4.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/drinks/Coffee.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/drinks/Drink.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/drinks/Whisky.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/drinks/Wine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/food/American.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/food/Food.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/food/Hamburger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/consumables/repair/RepairKit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/helpers/Dice.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/weapons/Claw.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/weapons/ShotGun.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/weapons/Sword.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lsg/weapons/Weapon.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lsg/LearningSoulsGame.java" afterPath="$PROJECT_DIR$/src/lsg/LearningSoulsGame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lsg/characters/Character.java" afterPath="$PROJECT_DIR$/src/lsg/characters/Character.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lsg/characters/Hero.java" afterPath="$PROJECT_DIR$/src/lsg/characters/Hero.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,7 +20,40 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="LearningSoulsGame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lsg/LearningSoulsGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="912">
+              <caret line="177" column="5" lean-forward="false" selection-start-line="177" selection-start-column="5" selection-end-line="177" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Character.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lsg/characters/Character.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="710">
+              <caret line="349" column="55" lean-forward="false" selection-start-line="349" selection-start-column="55" selection-end-line="349" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hero.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lsg/characters/Hero.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="692">
+              <caret line="171" column="35" lean-forward="true" selection-start-line="171" selection-start-column="35" selection-end-line="171" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -103,7 +101,6 @@
         <option value="$PROJECT_DIR$/src/lsg/consumables/MenuBestOfV4.java" />
         <option value="$PROJECT_DIR$/src/test/ConsumableTest.java" />
         <option value="$PROJECT_DIR$/src/test/CharacterTest.java" />
-        <option value="$PROJECT_DIR$/src/lsg/LearningSoulsGame.java" />
         <option value="$PROJECT_DIR$/src/test/LearningSoulsGameTest.java" />
         <option value="$PROJECT_DIR$/src/lsg/bags/Collectible.java" />
         <option value="$PROJECT_DIR$/src/lsg/armor/ArmorItem.java" />
@@ -115,8 +112,9 @@
         <option value="$PROJECT_DIR$/src/lsg/bags/MediumBag.java" />
         <option value="$PROJECT_DIR$/src/lsg/bags/Bag.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/lsg/characters/Hero.java" />
+        <option value="$PROJECT_DIR$/src/lsg/LearningSoulsGame.java" />
         <option value="$PROJECT_DIR$/src/lsg/characters/Character.java" />
+        <option value="$PROJECT_DIR$/src/lsg/characters/Hero.java" />
       </list>
     </option>
   </component>
@@ -160,6 +158,19 @@
               <item name="LearningSoulsGame_TP6" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LearningSoulsGame_TP6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LearningSoulsGame_TP6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lsg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LearningSoulsGame_TP6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LearningSoulsGame_TP6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lsg" type="462c0819:PsiDirectoryNode" />
+              <item name="characters" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -181,6 +192,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v6.11.0/bin/node" />
+    <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -734,7 +746,7 @@
       <workItem from="1512047066578" duration="6269000" />
       <workItem from="1512129930125" duration="4036000" />
       <workItem from="1512134748729" duration="117000" />
-      <workItem from="1512138911821" duration="72000" />
+      <workItem from="1512138911821" duration="1233000" />
     </task>
     <servers />
   </component>
@@ -771,7 +783,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139558000" />
+    <option name="totallyTimeSpent" value="140719000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1535" height="904" extended-state="6" />
@@ -784,7 +796,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.283208" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.283208" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24758843" sideWeight="0.4978701" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -932,6 +944,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="68" column="16" lean-forward="false" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1502#1503#0" expanded="false" />
+            <element signature="e#1526#1527#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -946,6 +963,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#232#233#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -963,18 +983,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/src/lsg/bags/SmallBag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lsg/characters/Hero.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="135" column="49" lean-forward="true" selection-start-line="135" selection-start-column="49" selection-end-line="135" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -989,6 +1002,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -996,6 +1010,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1003,13 +1018,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="774">
           <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lsg/characters/Character.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5328">
-          <caret line="328" column="57" lean-forward="false" selection-start-line="328" selection-start-column="57" selection-end-line="328" selection-end-column="57" />
+          <folding>
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1017,6 +1029,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="68" column="25" lean-forward="false" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1027,10 +1042,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lsg/LearningSoulsGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="55" />
+        <state relative-caret-position="912">
+          <caret line="177" column="5" lean-forward="false" selection-start-line="177" selection-start-column="5" selection-end-line="177" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lsg/characters/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="710">
+          <caret line="349" column="55" lean-forward="false" selection-start-line="349" selection-start-column="55" selection-end-line="349" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lsg/characters/Hero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="171" column="35" lean-forward="true" selection-start-line="171" selection-start-column="35" selection-end-line="171" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>

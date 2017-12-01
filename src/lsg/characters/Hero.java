@@ -155,14 +155,21 @@ public class Hero extends Character {
     @Override
     public float computeBuff() { return getTotalBuff(); }
 
-    public static void main(String[] args) {
+    public void printRings() {
 
-        Hero hero = new Hero();
+        String string = "RINGS";
 
-        hero.setArmorItem(new BlackWitchVeil(), 1);
-        hero.setArmorItem(new RingedKnightArmor(), 3);
+        for(int i = 0; i < MAX_RINGS; i++) {
 
-        System.out.println(hero.armorToString());
+            if (rings[i] != null) {
+
+                string = string.concat(" " + i + ":" + rings[i]);
+
+            }
+
+        }
+
+        System.out.println(string);
 
     }
 

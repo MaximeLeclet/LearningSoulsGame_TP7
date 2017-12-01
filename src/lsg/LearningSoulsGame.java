@@ -177,20 +177,4 @@ public class LearningSoulsGame {
 
     }
 
-    public void aTable() {
-
-        MenuBestOfV4 menuBestOfV4 = new MenuBestOfV4(Arrays.asList(new Hamburger(), new Wine(), new American(), new Coffee(), new Whisky(), new RepairKit()));
-
-        for (Consumable cons : menuBestOfV4) {
-            System.out.println();
-            hero.use(cons);
-            hero.printStats();
-            System.out.println("Apres utilisation : " + cons.toString());
-
-        }
-
-        hero.getWeapon().toString();
-
-    }
-
 }

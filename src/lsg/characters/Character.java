@@ -345,4 +345,10 @@ public abstract class Character {
         return (String.format(Locale.US,"%-20s %-20s " + LIFE_STAT_STRING.toUpperCase() + ":%-10s " + STAM_STAT_STRING.toUpperCase() + ":%-10s " + PROTECTION_STAT_STRING.toUpperCase() + ": %-10s " + BUFF_STAT_STRING.toUpperCase() + ": %-10s", ("[ " + this.getClass().getSimpleName() + " ]"), this.getName(), LIFE, STAMINA, computeProtection(), computeBuff()) + (this.isAlive() ? "(ALIVE)" : "(DEAD)"));
     }
 
+    public void printConsumable() {
+
+        System.out.println("CONSUMABLE : " + consumable);
+
+    }
+
 }
