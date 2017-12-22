@@ -43,6 +43,7 @@ public class LearningSoulsGame {
     public void play_v1() {
 
         init();
+        testExceptions();
         fight1v1();
 
     }
@@ -98,16 +99,16 @@ public class LearningSoulsGame {
 
                     System.out.println("\n" + attacker.getName() + " attacks " + attacked.getName() + " with " + attacker.getWeapon().getName() + " (ATTACK:" + attack + " | DMG : " + damages + ")");
 
-                    transfer = attacked;
-                    attacked = attacker;
-                    attacker = transfer;
-
                 }
                 else {
 
                     hero.consume();
 
                 }
+
+                transfer = attacked;
+                attacked = attacker;
+                attacker = transfer;
 
             }
             else {
@@ -174,6 +175,12 @@ public class LearningSoulsGame {
         hero.setWeapon(new Weapon("Grosse Arme", 0, 0, 100 ,100));
         hero.attack();
         hero.printStats();
+
+    }
+
+    public void testExceptions() {
+
+        hero.setWeapon(null);
 
     }
 
