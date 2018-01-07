@@ -14,6 +14,7 @@ import lsg.consumables.drinks.Wine;
 import lsg.consumables.food.American;
 import lsg.consumables.food.Hamburger;
 import lsg.consumables.repair.RepairKit;
+import lsg.exceptions.*;
 import lsg.weapons.Claw;
 import lsg.weapons.ShotGun;
 import lsg.weapons.Sword;
@@ -92,12 +93,88 @@ public class LearningSoulsGame {
 
                 } while (action < 1 || action > 2);
 
-                if(action == 1) {
+                if(attacker instanceof Hero && action == 2) {
 
-                    attack = attacker.attack();
+                    try {
+
+                        hero.consume();
+
+                    } catch (ConsumeNullException e) {
+
+                        System.out.println("IMPOSSIBLE ACTION : no consumable has been equiped !");
+
+                    } catch(ConsumeEmptyException e) {
+
+                        System.out.println("ACTION HAS NO EFFECT: " + hero.getConsumable().getName() + " is empty");
+
+                    } catch (ConsumeRepairNullWeaponException e) {
+
+                        System.out.println("IMPOSSIBLE ACTION : no weapon has been equiped !");
+
+                    }
+
+                }
+                else {
+
+                    try {
+
+                        attack = attacker.attack();
+
+                    } catch (WeaponNullException e) {
+
+                        attack = 0;
+                        System.out.println("WARNING : no weapon has been equiped !!!");
+
+                    } catch (WeaponBrokenException e) {
+
+                        attack = 0;
+                        System.out.println("WARNING : " + e.getWeapon() + " is broken !");
+
+                    } catch (StaminaEmptyException e) {
+
+                        attack = 0;
+                        System.out.println("ACTION HAS NO EFFECT: no more stamina !!!");
+
+                    }
+
                     damages = attacked.getHitWith(attack);
 
-                    System.out.println("\n" + attacker.getName() + " attacks " + attacked.getName() + " with " + attacker.getWeapon().getName() + " (ATTACK:" + attack + " | DMG : " + damages + ")");
+                    System.out.println("\n" + attacker.getName() + " attacks " + attacked.getName() + " with " + attacker.getWeapon() + " (ATTACK:" + attack + " | DMG : " + damages + ")");
+
+                    transfer = attacked;
+                    attacked = attacker;
+                    attacker = transfer;
+
+                }
+
+
+            }
+
+            /*if(attacker instanceof Hero) {
+
+                do {
+
+                    System.out.print("Hero action for next move : (1) attack | (2) consume > ");
+                    action = scanner.nextInt();
+
+                } while (action < 1 || action > 2);
+
+                if(action == 1) {
+
+                    try {
+
+                        attack = attacker.attack();
+
+                    } catch(WeaponNullException e) {
+
+                        attack = 0;
+                        System.out.println("WARNING : no weapon has been equiped !!!");
+
+                    }
+
+                    damages = attacked.getHitWith(attack);
+
+                    System.out.println("\n" + attacker.getName() + " attacks " + attacked.getName() + " with " + attacker.getWeapon() + " (ATTACK:" + attack + " | DMG : " + damages + ")");
 
                 }
                 else {
@@ -113,16 +190,26 @@ public class LearningSoulsGame {
             }
             else {
 
-                attack = attacker.attack();
+                try {
+
+                    attack = attacker.attack();
+
+                } catch(WeaponNullException e) {
+
+                    attack = 0;
+                    System.out.println("WARNING : no weapon has been equiped !!!");
+
+                }
+
                 damages = attacked.getHitWith(attack);
 
-                System.out.println("\n" + attacker.getName() + " attacks " + attacked.getName() + " with " + attacker.getWeapon().getName() + " (ATTACK:" + attack + " | DMG : " + damages + ")");
+                System.out.println("\n" + attacker.getName() + " attacks " + attacked.getName() + " with " + attacker.getWeapon() + " (ATTACK:" + attack + " | DMG : " + damages + ")");
 
                 transfer = attacked;
                 attacked = attacker;
                 attacker = transfer;
 
-            }
+            }*/
 
         }
 
@@ -173,7 +260,25 @@ public class LearningSoulsGame {
 
         hero.getHitWith(99);
         hero.setWeapon(new Weapon("Grosse Arme", 0, 0, 100 ,100));
-        hero.attack();
+
+        try {
+
+            hero.attack();
+
+        } catch(WeaponNullException e) {
+
+            e.printStackTrace();
+
+        } catch(WeaponBrokenException e) {
+
+            e.printStackTrace();
+
+        } catch (StaminaEmptyException e) {
+
+            e.printStackTrace();
+
+        }
+
         hero.printStats();
 
     }
