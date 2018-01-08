@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Arkham';
+    src: url('../fonts/Arkham_reg.TTF');
+}
+
+.game-font{
+    -fx-font-family: 'Arkham';
+    -fx-font-style: 'reg';
+    -fx-font-size: 45px;
+}
