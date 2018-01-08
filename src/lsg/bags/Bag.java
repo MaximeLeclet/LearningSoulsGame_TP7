@@ -3,6 +3,7 @@ package lsg.bags;
 import lsg.armor.BlackWitchVeil;
 import lsg.armor.DragonSlayerLeggings;
 import lsg.bags.Collectible;
+import lsg.exceptions.BagFullException;
 
 import java.util.HashSet;
 
@@ -35,10 +36,19 @@ public class Bag {
         return weight;
     }
 
-    public void push(Collectible item) {
+    public void push(Collectible item) throws BagFullException {
+
         if(item.getWeight() <= (capacity - weight)) {
+
             items.add(item);
+
         }
+        else {
+
+            throw new BagFullException(this);
+
+        }
+
     }
 
     public Collectible pop(Collectible item) {
@@ -66,7 +76,7 @@ public class Bag {
         return items.toArray(new Collectible[items.size()]);
     }
 
-    public static void transfer(Bag from, Bag into) {
+    public static void transfer(Bag from, Bag into) throws BagFullException {
 
         if(from == null || into == null) {
 
@@ -83,6 +93,11 @@ public class Bag {
                     into.push(item);
 
                 }
+
+            }
+            else {
+
+                throw new BagFullException(into);
 
             }
 
@@ -111,21 +126,6 @@ public class Bag {
         }
 
         return bagToString;
-
-    }
-
-    public static void main(String[] args) {
-
-        BlackWitchVeil blackWitchVeil= new BlackWitchVeil();
-
-        MediumBag mediumBag = new MediumBag();
-        System.out.println(mediumBag.toString());
-        mediumBag.push(blackWitchVeil);
-        System.out.println(mediumBag.toString());
-        mediumBag.push(new DragonSlayerLeggings());
-        System.out.println(mediumBag.toString());
-        mediumBag.pop(blackWitchVeil);
-        System.out.println(mediumBag.toString());
 
     }
 

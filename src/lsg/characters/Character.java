@@ -260,14 +260,26 @@ public abstract class Character {
 
     }
 
-    public void pickUp(Collectible item) {
+    public void pickUp(Collectible item) throws NoBagException, BagFullException {
+
+        if(bag == null) {
+
+            throw new NoBagException();
+
+        }
 
         System.out.println(name + " picks up " + weapon.toString());
         bag.push(item);
 
     }
 
-    public Collectible pullOut(Collectible item) {
+    public Collectible pullOut(Collectible item) throws NoBagException {
+
+        if(bag == null) {
+
+            throw new NoBagException();
+
+        }
 
         Collectible itemToPull = null;
 
@@ -288,25 +300,43 @@ public abstract class Character {
 
     }
 
-    public int getBagCapacity() {
+    public int getBagCapacity() throws NoBagException {
+
+        if(bag == null) {
+
+            throw new NoBagException();
+
+        }
 
         return bag.getCapacity();
 
     }
 
-    public int getBagWeight() {
+    public int getBagWeight() throws NoBagException {
+
+        if(bag == null) {
+
+            throw new NoBagException();
+
+        }
 
         return bag.getCapacity() - bag.getWeight();
 
     }
 
-    public Collectible[] getBagItems() {
+    public Collectible[] getBagItems() throws NoBagException {
+
+        if(bag == null) {
+
+            throw new NoBagException();
+
+        }
 
         return bag.getItems();
 
     }
 
-    public Bag setBag(Bag bag) {
+    public Bag setBag(Bag bag) throws BagFullException {
 
         if(bag == null) {
 
@@ -327,7 +357,13 @@ public abstract class Character {
 
     }
 
-    public void equip(Weapon weapon) {
+    public void equip(Weapon weapon) throws NoBagException {
+
+        if(bag == null) {
+
+            throw new NoBagException();
+
+        }
 
         Collectible item = (Collectible)weapon;
         if(pullOut(item) != null) {
@@ -339,7 +375,13 @@ public abstract class Character {
 
     }
 
-    public void equip(Consumable consumable) {
+    public void equip(Consumable consumable) throws NoBagException {
+
+        if(bag == null) {
+
+            throw new NoBagException();
+
+        }
 
         Collectible item = (Collectible)consumable;
         if(pullOut(item) != null) {
